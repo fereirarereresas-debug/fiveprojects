@@ -49,6 +49,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
+    const discord = document.getElementById('discord').value;
     const timestamp = new Date().toLocaleString();
     
     // Replace WEBHOOK_URL with your actual Discord webhook URL
@@ -61,7 +62,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                content: `📢 Novo ticket de suporte recebido\nNome: ${name}\nMensagem: ${message}\nHorário: ${timestamp}`
+                content: `📢 Novo ticket de suporte recebido\nNome: ${name}\nMensagem: ${message}\nDiscord: ${discord}\nHorário: ${timestamp}`
             })
         });
         
