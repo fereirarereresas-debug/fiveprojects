@@ -52,7 +52,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const timestamp = new Date().toLocaleString();
     
     // Replace WEBHOOK_URL with your actual Discord webhook URL
-    const webhookUrl = 'YOUR_WEBHOOK_URL';
+    const webhookUrl = 'https://discord.com/api/webhooks/1434621471707107378/u-JzEqQ5D22kWKyJeP_qv0MgOZaKMK3jcB96ocH8EPOoSv2PFEORm1bbb8Jr8b_R2WsR';
     
     try {
         await fetch(webhookUrl, {
