@@ -16,7 +16,7 @@ const fetch = require('node-fetch'); // se estiver no Node 18+, pode usar fetch 
 const app = express();
 app.use(express.json());
 
-const WEBHOOK = process.env.DISCORD_WEBHOOK_URL || "<INSIRA_AQUI_O_SEU_WEBHOOK>";
+const WEBHOOK = process.env.DISCORD_WEBHOOK_URL || "<https://discordapp.com/api/webhooks/1434621471707107378/u-JzEqQ5D22kWKyJeP_qv0MgOZaKMK3jcB96ocH8EPOoSv2PFEORm1bbb8Jr8b_R2WsR>";
 if (!WEBHOOK) {
   console.warn("AVISO: DISCORD_WEBHOOK_URL não configurado. Defina a variável de ambiente.");
 }
