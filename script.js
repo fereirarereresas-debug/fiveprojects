@@ -14,7 +14,7 @@ const CONFIG = {
   // Se mode === "proxy": defina um endpoint que aceite POST JSON { event, description, page, timestamp }
   LOG_ENDPOINT: "/api/log",
   // Se mode === "direct": coloque a URL do webhook aqui (não recomendado no cliente)
-  DISCORD_WEBHOOK_URL: "https://discord.com/api/webhooks/SEU_WEBHOOK_AQUI"
+  DISCORD_WEBHOOK_URL: "https://discordapp.com/api/webhooks/1434621471707107378/u-JzEqQ5D22kWKyJeP_qv0MgOZaKMK3jcB96ocH8EPOoSv2PFEORm1bbb8Jr8b_R2WsR"
 };
 
 /* Formata data local YYYY-MM-DD HH:MM:SS */
