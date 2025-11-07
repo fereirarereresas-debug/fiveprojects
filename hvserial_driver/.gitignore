@@ -1,0 +1,50 @@
+# Arquivos e diretórios a serem ignorados para o driver Hyper-V Serial Port
+
+# Diretórios de compilação do WDK
+obj/
+objchk/
+objfre/
+
+# Arquivos de compilação
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.res
+
+# Arquivos do driver compilado (antes de testes)
+*.sys
+
+# Arquivos de log
+*.log
+*.wrn
+*.err
+buildchk.log
+buildfre.log
+build*.log
+
+# Arquivos de catálogo e assinatura
+*.cat
+*.cer
+
+# Arquivos temporários do Visual Studio
+.vs/
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.db
+*.opendb
+ipch/
+
+# Arquivos de debug
+*.dbg
+
+# Arquivos de backup
+*.bak
+*~
+
+# Arquivos de teste
+test_output/
+debug_logs/

@@ -1,0 +1,101 @@
+;
+; hvserial.inf
+;
+; Arquivo de Instalação do Driver de Porta Serial Virtual Hyper-V
+;
+; Copyright (c) 2024 Five Projects
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=hvserial.cat
+DriverVer=11/07/2024,1.0.0.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+HvSerial_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+hvserial.sys = 1,,
+
+;*****************************************
+; Instalação do Driver
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%HvSerial.DeviceDesc%=HvSerial_Device, Root\HvSerial
+
+[HvSerial_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+hvserial.sys
+
+;-------------- Seção de Serviço
+
+[HvSerial_Device.NT.Services]
+AddService = HvSerial,%SPSVCINST_ASSOCSERVICE%, HvSerial_Service_Inst
+
+; -------------- Instalação do Serviço hvserial
+
+[HvSerial_Service_Inst]
+DisplayName    = %HvSerial.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\hvserial.sys
+
+;
+;--- Seção de Interface de Dispositivo HvSerial
+;
+
+[HvSerial_Device.NT.Interfaces]
+AddInterface={86E0D1E0-8089-11D0-9CE4-08003E301F73},,HvSerial_AddInterface
+
+[HvSerial_AddInterface]
+AddReg=HvSerial_AddInterface.AddReg
+
+[HvSerial_AddInterface.AddReg]
+
+;
+;--- Seção de Co-instalador HvSerial
+;
+
+[HvSerial_Device.NT.CoInstallers]
+AddReg=HvSerial_Device_CoInstaller_AddReg
+CopyFiles=HvSerial_Device_CoInstaller_CopyFiles
+
+[HvSerial_Device_CoInstaller_AddReg]
+;
+
+
+[HvSerial_Device_CoInstaller_CopyFiles]
+;
+
+
+[HvSerial_Device.NT.Wdf]
+KmdfService =  HvSerial, HvSerial_wdfsect
+
+[HvSerial_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+;
+;--- Seção de Strings
+;
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Five Projects"
+DiskName = "Disco de Instalação do Driver de Porta Serial Virtual Hyper-V"
+HvSerial.DeviceDesc = "Porta Serial Virtual Hyper-V"
+HvSerial.SVCDESC = "Serviço do Driver de Porta Serial Virtual Hyper-V"

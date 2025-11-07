@@ -1,0 +1,46 @@
+#
+# SOURCES
+#
+# Arquivo de compilação para o Driver de Porta Serial Virtual Hyper-V
+# Usado com o Windows Driver Kit (WDK)
+#
+# Copyright (c) 2024 Five Projects
+#
+
+TARGETNAME=hvserial
+TARGETTYPE=DRIVER
+
+# Definir tipo de driver KMDF
+KMDF_VERSION_MAJOR=1
+KMDF_VERSION_MINOR=15
+
+# Arquivos fonte
+SOURCES=hvserial_driver.c \
+        hvserial_ioctl.c  \
+        hvserial_port.c
+
+# Incluir bibliotecas necessárias
+TARGETLIBS=$(DDK_LIB_PATH)\wdfldr.lib
+
+# Diretórios de include
+INCLUDES=$(INCLUDES);                           \
+         $(DDK_INC_PATH);                       \
+         $(SDK_INC_PATH);
+
+# Opções do compilador C
+C_DEFINES=$(C_DEFINES) -DUNICODE -D_UNICODE
+
+# Definir nível de aviso
+MSC_WARNING_LEVEL=/W4 /WX
+
+# Otimizações
+MSC_OPTIMIZATION=/O2
+
+# Opções específicas do driver
+DRIVERTYPE=WDM
+
+# Arquitetura alvo
+TARGETPATH=obj
+
+# Gerar PDB para debugging
+USE_PDB=1
