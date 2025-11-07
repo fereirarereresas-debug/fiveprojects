@@ -220,7 +220,8 @@ int main(int argc, char* argv[])
 
     // Teste de escrita
     printf("\n4. Testando escrita de dados...\n");
-    sprintf(txBuffer, "Hello from Hyper-V Serial Driver! Port: COM%lu\r\n", physicalPort);
+    _snprintf_s(txBuffer, sizeof(txBuffer), _TRUNCATE, 
+                "Hello from Hyper-V Serial Driver! Port: COM%lu\r\n", physicalPort);
     
     success = WriteFile(
         hDevice,

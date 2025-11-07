@@ -19,7 +19,7 @@
 //
 // Definições de constantes
 //
-#define HVSERIAL_POOL_TAG 'reSV'  // Tag para alocação de memória
+#define HVSERIAL_POOL_TAG 'reSV'  // Tag para alocação de memória ('VSer' em ordem reversa)
 #define HVSERIAL_MAX_PORTS 256    // Número máximo de portas seriais
 #define HVSERIAL_BUFFER_SIZE 4096 // Tamanho do buffer de dados
 

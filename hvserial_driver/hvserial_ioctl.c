@@ -296,9 +296,6 @@ HvSerialBindPhysicalPort(
     size_t bufferLength;
     KIRQL oldIrql;
 
-    UNREFERENCED_PARAMETER(Request);
-    UNREFERENCED_PARAMETER(bufferLength);
-
     //
     // Obter número da porta física do buffer de entrada
     //
@@ -338,8 +335,9 @@ HvSerialBindPhysicalPort(
     // Aqui seria implementada a vinculação real à porta física
     // Por enquanto, apenas marcamos como vinculada
     //
-    DeviceContext->PortNumber = *portNumber;
+    // TODO: Implementar vinculação real antes de definir IsBound
     DeviceContext->IsBound = TRUE;
+    DeviceContext->PortNumber = *portNumber;
     DeviceContext->PhysicalPort = NULL; // Seria definido com a referência real
 
     //

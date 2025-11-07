@@ -169,6 +169,11 @@ HvSerialInitializeBuffer(
     }
 
     //
+    // Zerar buffer para evitar vazamento de informações
+    //
+    RtlZeroMemory(Buffer->Buffer, Size);
+
+    //
     // Inicializar campos do buffer
     //
     Buffer->Size = Size;
