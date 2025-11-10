@@ -7,278 +7,264 @@ const translations = {
         loading: "Inicializando segurança FiveProjects…",
         nav: {
             home: "Início",
-            how: "Como Funciona",
-            detection: "Detecção",
+            about: "Sobre",
+            tech: "Tecnologia",
             terms: "Termos",
-            faq: "FAQ",
             contact: "Contato"
         },
         hero: {
-            slogan: "Proteja seu jogo. Jogue limpo.",
-            subtitle: "Detecção precisa, resposta rápida e transparência total.",
-            btn1: "Proteger meu servidor",
-            btn2: "Saiba mais"
+            slogan: "Proteção Inteligente. Segurança Total. Futuro do Anti-Cheat.",
+            btn1: "Saiba Mais",
+            btn2: "Entrar no Discord"
         },
-        mission: {
-            title: "Nossa Missão",
-            text: "O FiveProjects Anti-Cheat tem como missão proteger a integridade dos jogos e comunidades, oferecendo uma solução moderna, precisa e transparente contra trapaças. Trabalhamos com IA, análise em nuvem e monitoramento inteligente para detectar irregularidades em tempo real, tudo dentro dos limites legais e éticos."
+        about: {
+            title: "Sobre o FiveProjects Anti-Cheat",
+            text: "O FiveProjects Anti-Cheat é um sistema avançado de segurança desenvolvido para detectar, prevenir e neutralizar trapaças em tempo real. Utiliza inteligência artificial, análise comportamental e verificação de integridade do sistema.",
+            feature1: {
+                title: "Detecção Inteligente",
+                desc: "Análise de comportamento e padrões suspeitos."
+            },
+            feature2: {
+                title: "Alta Performance",
+                desc: "Operação em segundo plano com baixo consumo."
+            },
+            feature3: {
+                title: "Compatibilidade Global",
+                desc: "Integração com diversos jogos e servidores."
+            }
         },
-        howItWorks: {
+        tech: {
             title: "Como Funciona",
             step1: {
-                title: "Instalação e Consentimento",
-                desc: "O jogador instala e autoriza as verificações de integridade."
+                title: "Verificação em Nível de Kernel e Usuário",
+                desc: "Análise profunda do sistema operacional e processos ativos."
             },
             step2: {
-                title: "Verificações Iniciais",
-                desc: "Confere integridade de arquivos e módulos antes da partida."
+                title: "Virtualização de Hardware ID (HWID)",
+                desc: "Proteção contra spoofing e identificação única de dispositivos."
             },
             step3: {
                 title: "Monitoramento em Tempo Real",
-                desc: "Observa comportamento e alterações suspeitas."
+                desc: "Detecção instantânea de comportamentos anômalos durante o jogo."
             },
             step4: {
-                title: "Análise em Nuvem",
-                desc: "Dados anônimos são processados em servidores FiveProjects."
-            },
-            step5: {
-                title: "Ações e Revisão",
-                desc: "Medidas automáticas e revisão humana para decisões justas."
-            },
-            step6: {
-                title: "Atualizações Constantes",
-                desc: "Sistema sempre atualizado com novas assinaturas."
+                title: "Sistema de Logs Inteligentes e Painel em Nuvem",
+                desc: "Armazenamento seguro e análise avançada de dados."
             }
         },
-        detection: {
-            title: "Métodos de Detecção",
-            method1: {
-                title: "Assinaturas e Padrões",
-                desc: "Detecta injetores e bibliotecas conhecidas."
-            },
-            method2: {
-                title: "Análise Comportamental (IA)",
-                desc: "Identifica padrões humanos impossíveis."
-            },
-            method3: {
-                title: "Verificação de Integridade",
-                desc: "Garante cliente limpo e sem alterações."
-            },
-            method4: {
-                title: "Drivers e Hardware",
-                desc: "Verifica rootkits e modificações suspeitas."
-            },
-            method5: {
-                title: "Correlação em Nuvem",
-                desc: "Compara padrões entre partidas e servidores."
-            },
-            privacy: "🔒 Respeitamos totalmente a privacidade e aplicamos cada verificação apenas com consentimento do usuário."
-        },
         terms: {
-            title: "Termos de Uso e Política de Privacidade",
+            title: "Termos e Política",
             item1: {
-                title: "1. Uso e Consentimento",
-                text: "Ao instalar o FiveProjects, o usuário aceita verificações de integridade e coleta técnica mínima."
+                title: "1. Uso Permitido do Software",
+                text: "O FiveProjects Anti-Cheat deve ser utilizado exclusivamente para proteção de servidores autorizados. Qualquer tentativa de manipulação ou bypass é estritamente proibida."
             },
             item2: {
-                title: "2. Dados Coletados",
-                text: "Logs técnicos, identificadores de sessão, hashes e integridade de cliente."
+                title: "2. Coleta e Armazenamento de Dados",
+                text: "Coletamos dados técnicos mínimos necessários para a operação do sistema, incluindo informações de hardware, sessão e integridade de arquivos."
             },
             item3: {
-                title: "3. Uso dos Dados",
-                text: "Exclusivamente para detecção e auditoria."
+                title: "3. Responsabilidade do Usuário",
+                text: "Os usuários são responsáveis por manter seus sistemas livres de software malicioso e garantir que apenas processos legítimos estejam em execução."
             },
             item4: {
-                title: "4. Ações Aplicáveis",
-                text: "Advertência, suspensão ou banimento, conforme gravidade."
+                title: "4. Penalidades e Suspensões",
+                text: "Violações podem resultar em advertências, suspensões temporárias ou banimentos permanentes, dependendo da gravidade."
             },
             item5: {
-                title: "5. Apelação",
-                text: "Todos têm direito de revisão e apelação."
-            },
-            item6: {
-                title: "6. Atualizações",
-                text: "Termos podem ser alterados com aviso prévio."
-            },
-            item7: {
-                title: "7. Conformidade",
-                text: "Em total acordo com LGPD e GDPR."
+                title: "5. Política de Privacidade",
+                text: "Todos os dados são criptografados e armazenados de forma segura. Nunca compartilhamos informações pessoais com terceiros sem consentimento."
             },
             footer: "© 2025 FiveProjects Anti-Cheat — Todos os direitos reservados."
         },
-        faq: {
-            title: "Perguntas Frequentes",
-            q1: "O FiveProjects é seguro?",
-            a1: "Sim, segue LGPD/GDPR e coleta apenas o essencial.",
-            q2: "Afeta o desempenho?",
-            a2: "Não, é leve e otimizado.",
-            q3: "Preciso instalar driver?",
-            a3: "Somente se o servidor exigir proteção avançada (opcional).",
-            q4: "Posso desinstalar?",
-            a4: "Sim, mas servidores protegidos podem bloquear acesso sem o cliente ativo.",
-            q5: "Como apelar uma punição?",
-            a5: "Use a aba Contato / Suporte ou entre no nosso Discord oficial."
-        },
         contact: {
             title: "Contato / Suporte",
-            intro: "Dúvidas, apelações ou integração do FiveProjects?<br>Nossa equipe está pronta para ajudar:",
-            discord: "💬 Servidor oficial do Discord:",
+            intro: "Entre em contato conosco para suporte, apelações ou parcerias.",
             form: {
                 name: "Nome",
                 email: "E-mail",
-                playerId: "ID do jogador",
-                type: "Tipo",
-                types: {
-                    support: "Suporte",
-                    appeal: "Apelação",
-                    partnership: "Parceria"
-                },
                 message: "Mensagem",
                 submit: "Enviar Solicitação"
             }
         },
         footer: {
-            rights: "© 2025 FiveProjects Anti-Cheat — Todos os direitos reservados.",
-            discord: "💬 Junte-se à comunidade no nosso Discord oficial."
+            tagline: "Desenvolvido por FiveProjects Team",
+            rights: "© 2025 FiveProjects Anti-Cheat — Todos os direitos reservados."
         }
     },
     en: {
         loading: "Initializing FiveProjects security…",
         nav: {
             home: "Home",
-            how: "How It Works",
-            detection: "Detection",
+            about: "About",
+            tech: "Technology",
             terms: "Terms",
-            faq: "FAQ",
             contact: "Contact"
         },
         hero: {
-            slogan: "Protect your game. Play fair.",
-            subtitle: "Precise detection, fast response, and total transparency.",
-            btn1: "Protect my server",
-            btn2: "Learn more"
+            slogan: "Intelligent Protection. Total Security. The Future of Anti-Cheat.",
+            btn1: "Learn More",
+            btn2: "Join Discord"
         },
-        mission: {
-            title: "Our Mission",
-            text: "FiveProjects Anti-Cheat's mission is to protect the integrity of games and communities by offering a modern, precise, and transparent solution against cheating. We work with AI, cloud analysis, and intelligent monitoring to detect irregularities in real-time, all within legal and ethical limits."
+        about: {
+            title: "About FiveProjects Anti-Cheat",
+            text: "FiveProjects Anti-Cheat is an advanced security system developed to detect, prevent, and neutralize cheating in real-time. It uses artificial intelligence, behavioral analysis, and system integrity verification.",
+            feature1: {
+                title: "Intelligent Detection",
+                desc: "Behavior analysis and suspicious pattern detection."
+            },
+            feature2: {
+                title: "High Performance",
+                desc: "Background operation with low resource consumption."
+            },
+            feature3: {
+                title: "Global Compatibility",
+                desc: "Integration with various games and servers."
+            }
         },
-        howItWorks: {
+        tech: {
             title: "How It Works",
             step1: {
-                title: "Installation and Consent",
-                desc: "The player installs and authorizes integrity checks."
+                title: "Kernel and User-Level Verification",
+                desc: "Deep analysis of the operating system and active processes."
             },
             step2: {
-                title: "Initial Checks",
-                desc: "Verifies file and module integrity before the match."
+                title: "Hardware ID (HWID) Virtualization",
+                desc: "Protection against spoofing and unique device identification."
             },
             step3: {
                 title: "Real-Time Monitoring",
-                desc: "Observes behavior and suspicious changes."
+                desc: "Instant detection of anomalous behavior during gameplay."
             },
             step4: {
-                title: "Cloud Analysis",
-                desc: "Anonymous data is processed on FiveProjects servers."
-            },
-            step5: {
-                title: "Actions and Review",
-                desc: "Automatic measures and human review for fair decisions."
-            },
-            step6: {
-                title: "Constant Updates",
-                desc: "System always updated with new signatures."
+                title: "Intelligent Logging System and Cloud Panel",
+                desc: "Secure storage and advanced data analysis."
             }
         },
-        detection: {
-            title: "Detection Methods",
-            method1: {
-                title: "Signatures and Patterns",
-                desc: "Detects known injectors and libraries."
-            },
-            method2: {
-                title: "Behavioral Analysis (AI)",
-                desc: "Identifies impossible human patterns."
-            },
-            method3: {
-                title: "Integrity Verification",
-                desc: "Ensures clean client without alterations."
-            },
-            method4: {
-                title: "Drivers and Hardware",
-                desc: "Checks for rootkits and suspicious modifications."
-            },
-            method5: {
-                title: "Cloud Correlation",
-                desc: "Compares patterns across matches and servers."
-            },
-            privacy: "🔒 We fully respect privacy and apply each check only with user consent."
-        },
         terms: {
-            title: "Terms of Use and Privacy Policy",
+            title: "Terms and Policy",
             item1: {
-                title: "1. Use and Consent",
-                text: "By installing FiveProjects, the user accepts integrity checks and minimal technical data collection."
+                title: "1. Permitted Software Use",
+                text: "FiveProjects Anti-Cheat must be used exclusively for protecting authorized servers. Any attempt at manipulation or bypass is strictly prohibited."
             },
             item2: {
-                title: "2. Data Collected",
-                text: "Technical logs, session identifiers, hashes, and client integrity."
+                title: "2. Data Collection and Storage",
+                text: "We collect minimal technical data necessary for system operation, including hardware information, session data, and file integrity."
             },
             item3: {
-                title: "3. Data Usage",
-                text: "Exclusively for detection and auditing."
+                title: "3. User Responsibility",
+                text: "Users are responsible for keeping their systems free of malicious software and ensuring only legitimate processes are running."
             },
             item4: {
-                title: "4. Applicable Actions",
-                text: "Warning, suspension, or ban, depending on severity."
+                title: "4. Penalties and Suspensions",
+                text: "Violations may result in warnings, temporary suspensions, or permanent bans, depending on severity."
             },
             item5: {
-                title: "5. Appeal",
-                text: "Everyone has the right to review and appeal."
-            },
-            item6: {
-                title: "6. Updates",
-                text: "Terms may be changed with prior notice."
-            },
-            item7: {
-                title: "7. Compliance",
-                text: "In full compliance with LGPD and GDPR."
+                title: "5. Privacy Policy",
+                text: "All data is encrypted and stored securely. We never share personal information with third parties without consent."
             },
             footer: "© 2025 FiveProjects Anti-Cheat — All rights reserved."
         },
-        faq: {
-            title: "Frequently Asked Questions",
-            q1: "Is FiveProjects safe?",
-            a1: "Yes, it follows LGPD/GDPR and collects only the essentials.",
-            q2: "Does it affect performance?",
-            a2: "No, it's lightweight and optimized.",
-            q3: "Do I need to install a driver?",
-            a3: "Only if the server requires advanced protection (optional).",
-            q4: "Can I uninstall it?",
-            a4: "Yes, but protected servers may block access without the active client.",
-            q5: "How do I appeal a punishment?",
-            a5: "Use the Contact / Support tab or join our official Discord."
-        },
         contact: {
             title: "Contact / Support",
-            intro: "Questions, appeals, or FiveProjects integration?<br>Our team is ready to help:",
-            discord: "💬 Official Discord server:",
+            intro: "Contact us for support, appeals, or partnerships.",
             form: {
                 name: "Name",
                 email: "Email",
-                playerId: "Player ID",
-                type: "Type",
-                types: {
-                    support: "Support",
-                    appeal: "Appeal",
-                    partnership: "Partnership"
-                },
                 message: "Message",
                 submit: "Submit Request"
             }
         },
         footer: {
-            rights: "© 2025 FiveProjects Anti-Cheat — All rights reserved.",
-            discord: "💬 Join the community on our official Discord."
+            tagline: "Developed by FiveProjects Team",
+            rights: "© 2025 FiveProjects Anti-Cheat — All rights reserved."
+        }
+    },
+    es: {
+        loading: "Inicializando seguridad FiveProjects…",
+        nav: {
+            home: "Inicio",
+            about: "Acerca de",
+            tech: "Tecnología",
+            terms: "Términos",
+            contact: "Contacto"
+        },
+        hero: {
+            slogan: "Protección Inteligente. Seguridad Total. El Futuro del Anti-Cheat.",
+            btn1: "Saber Más",
+            btn2: "Unirse a Discord"
+        },
+        about: {
+            title: "Acerca de FiveProjects Anti-Cheat",
+            text: "FiveProjects Anti-Cheat es un sistema de seguridad avanzado desarrollado para detectar, prevenir y neutralizar trampas en tiempo real. Utiliza inteligencia artificial, análisis de comportamiento y verificación de integridad del sistema.",
+            feature1: {
+                title: "Detección Inteligente",
+                desc: "Análisis de comportamiento y patrones sospechosos."
+            },
+            feature2: {
+                title: "Alto Rendimiento",
+                desc: "Operación en segundo plano con bajo consumo."
+            },
+            feature3: {
+                title: "Compatibilidad Global",
+                desc: "Integración con diversos juegos y servidores."
+            }
+        },
+        tech: {
+            title: "Cómo Funciona",
+            step1: {
+                title: "Verificación a Nivel de Kernel y Usuario",
+                desc: "Análisis profundo del sistema operativo y procesos activos."
+            },
+            step2: {
+                title: "Virtualización de ID de Hardware (HWID)",
+                desc: "Protección contra spoofing e identificación única de dispositivos."
+            },
+            step3: {
+                title: "Monitoreo en Tiempo Real",
+                desc: "Detección instantánea de comportamientos anómalos durante el juego."
+            },
+            step4: {
+                title: "Sistema de Registros Inteligentes y Panel en la Nube",
+                desc: "Almacenamiento seguro y análisis avanzado de datos."
+            }
+        },
+        terms: {
+            title: "Términos y Política",
+            item1: {
+                title: "1. Uso Permitido del Software",
+                text: "FiveProjects Anti-Cheat debe usarse exclusivamente para protección de servidores autorizados. Cualquier intento de manipulación o bypass está estrictamente prohibido."
+            },
+            item2: {
+                title: "2. Recopilación y Almacenamiento de Datos",
+                text: "Recopilamos datos técnicos mínimos necesarios para la operación del sistema, incluyendo información de hardware, sesión e integridad de archivos."
+            },
+            item3: {
+                title: "3. Responsabilidad del Usuario",
+                text: "Los usuarios son responsables de mantener sus sistemas libres de software malicioso y garantizar que solo se ejecuten procesos legítimos."
+            },
+            item4: {
+                title: "4. Penalizaciones y Suspensiones",
+                text: "Las violaciones pueden resultar en advertencias, suspensiones temporales o prohibiciones permanentes, dependiendo de la gravedad."
+            },
+            item5: {
+                title: "5. Política de Privacidad",
+                text: "Todos los datos están encriptados y almacenados de forma segura. Nunca compartimos información personal con terceros sin consentimiento."
+            },
+            footer: "© 2025 FiveProjects Anti-Cheat — Todos los derechos reservados."
+        },
+        contact: {
+            title: "Contacto / Soporte",
+            intro: "Contáctenos para soporte, apelaciones o asociaciones.",
+            form: {
+                name: "Nombre",
+                email: "Correo Electrónico",
+                message: "Mensaje",
+                submit: "Enviar Solicitud"
+            }
+        },
+        footer: {
+            tagline: "Desarrollado por FiveProjects Team",
+            rights: "© 2025 FiveProjects Anti-Cheat — Todos los derechos reservados."
         }
     }
 };
