@@ -1,0 +1,21 @@
+{
+  "name": "FiveProjects - Inovação e Sustentabilidade Digital",
+  "short_name": "FiveProjects",
+  "description": "Grupo de desenvolvedores focados em criar soluções tecnológicas sustentáveis, seguras e inovadoras.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#007BFF",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
