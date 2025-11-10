@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveProjects (Anti-Cheat) - Proteja seu jogo. Jogue limpo.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p data-i18n="loading">Inicializando segurança FiveProjects…</p>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="lang-toggle" aria-label="Change language">
+            <span id="current-lang">PT</span> 🌐
+        </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="logo">FiveProjects <span class="anti-cheat">(Anti-Cheat)</span></div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" data-i18n="nav.home">Início</a></li>
+                <li><a href="#como-funciona" data-i18n="nav.how">Como Funciona</a></li>
+                <li><a href="#deteccao" data-i18n="nav.detection">Detecção</a></li>
+                <li><a href="#termos" data-i18n="nav.terms">Termos</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero-section active">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-logo">FiveProjects <span class="anti-cheat-badge">(Anti-Cheat)</span></h1>
+                    <p class="hero-slogan" data-i18n="hero.slogan">Proteja seu jogo. Jogue limpo.</p>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Detecção precisa, resposta rápida e transparência total.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-i18n="hero.btn1">Proteger meu servidor</button>
+                        <button class="btn btn-outline" data-i18n="hero.btn2">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div class="mission-card">
+                    <h3 data-i18n="mission.title">Nossa Missão</h3>
+                    <p data-i18n="mission.text">O FiveProjects Anti-Cheat tem como missão proteger a integridade dos jogos e comunidades, oferecendo uma solução moderna, precisa e transparente contra trapaças. Trabalhamos com IA, análise em nuvem e monitoramento inteligente para detectar irregularidades em tempo real, tudo dentro dos limites legais e éticos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="howItWorks.title">Como Funciona</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🔐</div>
+                        <h3 data-i18n="howItWorks.step1.title">Instalação e Consentimento</h3>
+                        <p data-i18n="howItWorks.step1.desc">O jogador instala e autoriza as verificações de integridade.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">✅</div>
+                        <h3 data-i18n="howItWorks.step2.title">Verificações Iniciais</h3>
+                        <p data-i18n="howItWorks.step2.desc">Confere integridade de arquivos e módulos antes da partida.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👁️</div>
+                        <h3 data-i18n="howItWorks.step3.title">Monitoramento em Tempo Real</h3>
+                        <p data-i18n="howItWorks.step3.desc">Observa comportamento e alterações suspeitas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">☁️</div>
+                        <h3 data-i18n="howItWorks.step4.title">Análise em Nuvem</h3>
+                        <p data-i18n="howItWorks.step4.desc">Dados anônimos são processados em servidores FiveProjects.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚖️</div>
+                        <h3 data-i18n="howItWorks.step5.title">Ações e Revisão</h3>
+                        <p data-i18n="howItWorks.step5.desc">Medidas automáticas e revisão humana para decisões justas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔄</div>
+                        <h3 data-i18n="howItWorks.step6.title">Atualizações Constantes</h3>
+                        <p data-i18n="howItWorks.step6.desc">Sistema sempre atualizado com novas assinaturas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETECÇÃO -->
+        <section id="deteccao" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="detection.title">Métodos de Detecção</h2>
+                <div class="detection-grid">
+                    <div class="detection-card">
+                        <h3 data-i18n="detection.method1.title">Assinaturas e Padrões</h3>
+                        <p data-i18n="detection.method1.desc">Detecta injetores e bibliotecas conhecidas.</p>
+                    </div>
+                    <div class="detection-card">
+                        <h3 data-i18n="detection.method2.title">Análise Comportamental (IA)</h3>
+                        <p data-i18n="detection.method2.desc">Identifica padrões humanos impossíveis.</p>
+                    </div>
+                    <div class="detection-card">
+                        <h3 data-i18n="detection.method3.title">Verificação de Integridade</h3>
+                        <p data-i18n="detection.method3.desc">Garante cliente limpo e sem alterações.</p>
+                    </div>
+                    <div class="detection-card">
+                        <h3 data-i18n="detection.method4.title">Drivers e Hardware</h3>
+                        <p data-i18n="detection.method4.desc">Verifica rootkits e modificações suspeitas.</p>
+                    </div>
+                    <div class="detection-card">
+                        <h3 data-i18n="detection.method5.title">Correlação em Nuvem</h3>
+                        <p data-i18n="detection.method5.desc">Compara padrões entre partidas e servidores.</p>
+                    </div>
+                </div>
+                <div class="privacy-notice">
+                    <p data-i18n="detection.privacy">🔒 Respeitamos totalmente a privacidade e aplicamos cada verificação apenas com consentimento do usuário.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERMOS -->
+        <section id="termos" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="terms.title">Termos de Uso e Política de Privacidade</h2>
+                <div class="terms-content">
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item1.title">1. Uso e Consentimento</h3>
+                        <p data-i18n="terms.item1.text">Ao instalar o FiveProjects, o usuário aceita verificações de integridade e coleta técnica mínima.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item2.title">2. Dados Coletados</h3>
+                        <p data-i18n="terms.item2.text">Logs técnicos, identificadores de sessão, hashes e integridade de cliente.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item3.title">3. Uso dos Dados</h3>
+                        <p data-i18n="terms.item3.text">Exclusivamente para detecção e auditoria.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item4.title">4. Ações Aplicáveis</h3>
+                        <p data-i18n="terms.item4.text">Advertência, suspensão ou banimento, conforme gravidade.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item5.title">5. Apelação</h3>
+                        <p data-i18n="terms.item5.text">Todos têm direito de revisão e apelação.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item6.title">6. Atualizações</h3>
+                        <p data-i18n="terms.item6.text">Termos podem ser alterados com aviso prévio.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 data-i18n="terms.item7.title">7. Conformidade</h3>
+                        <p data-i18n="terms.item7.text">Em total acordo com LGPD e GDPR.</p>
+                    </div>
+                </div>
+                <div class="terms-footer">
+                    <p data-i18n="terms.footer">© 2025 FiveProjects Anti-Cheat — Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="faq.title">Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="faq.q1">O FiveProjects é seguro?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a1">Sim, segue LGPD/GDPR e coleta apenas o essencial.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="faq.q2">Afeta o desempenho?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a2">Não, é leve e otimizado.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="faq.q3">Preciso instalar driver?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a3">Somente se o servidor exigir proteção avançada (opcional).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="faq.q4">Posso desinstalar?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a4">Sim, mas servidores protegidos podem bloquear acesso sem o cliente ativo.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="faq.q5">Como apelar uma punição?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a5">Use a aba Contato / Suporte ou entre no nosso Discord oficial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Contato / Suporte</h2>
+                <div class="contact-intro">
+                    <p data-i18n="contact.intro">Dúvidas, apelações ou integração do FiveProjects?<br>Nossa equipe está pronta para ajudar:</p>
+                    <p>📧 support@fiveprojects.net</p>
+                    <p data-i18n="contact.discord">💬 Servidor oficial do Discord:</p>
+                    <a href="https://discord.gg/eCxwCsMMD3" class="discord-link" target="_blank">
+                        👉 https://discord.gg/eCxwCsMMD3
+                    </a>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="player-id" data-i18n="contact.form.playerId">ID do jogador</label>
+                        <input type="text" id="player-id" name="player-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="type" data-i18n="contact.form.type">Tipo</label>
+                        <select id="type" name="type">
+                            <option value="support" data-i18n="contact.form.types.support">Suporte</option>
+                            <option value="appeal" data-i18n="contact.form.types.appeal">Apelação</option>
+                            <option value="partnership" data-i18n="contact.form.types.partnership">Parceria</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Enviar Solicitação</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.rights">© 2025 FiveProjects Anti-Cheat — Todos os direitos reservados.</p>
+            <p data-i18n="footer.discord">💬 Junte-se à comunidade no nosso Discord oficial.</p>
+            <a href="https://discord.gg/eCxwCsMMD3" class="discord-link" target="_blank">Discord FiveProjects</a>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
